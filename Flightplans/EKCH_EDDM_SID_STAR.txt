@@ -1,0 +1,32 @@
+// -----------------------------------------------------------
+// Flightplans for FSX
+// for use with FSPilot
+// 
+// FSPilot (c) by Scientific Networks, Munich 
+// -----------------------------------------------------------
+// small flightplan routine (Learjet (FS) for takeoff, 
+// SID and STAR navigated flight to Frankfurt runway EDDF 25L GPS autoland 
+//
+//
+set current utc
+set apcontrol plane
+autorudder on
+set speedunits knots
+set distanceunits miles
+set origin EKCH
+set destination EDDM
+run takeoff
+set speed 250
+set alt 22000.
+set climb 1000
+fly sid BETU1A
+farselect eddm
+set speed machmaxsafe
+headtarget
+wait distin 100.
+set speed approachspeed
+set alt 7000.
+set climb -1500.
+fly star ARBA2A
+fly short autolanding EDDM 26L
+end

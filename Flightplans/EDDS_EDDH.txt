@@ -1,0 +1,38 @@
+// -----------------------------------------------------------
+// Flightplan for FSX / P3D
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2015 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// add your comment here
+// and here
+// 
+// 
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+autorudder on
+set dep EDDS
+set dest EDDH
+run takeoff
+set alt 28000.0
+// Please set a value for initial speed
+set speed 0.0
+// Please set a value for initial climb rate 
+set climb 1500.0
+wait 15.
+farselect EDDH
+wait distin 150.
+set alt 8000.
+set climb -1500.
+set speed 220.
+wait distin 50.
+// please select one of the landing options below according to your personal preferences or aircraft !
+// you may also specify a specific runway at your destination airport ... 
+fly normal autolanding EDDH
+//fly short autolanding EDDH
+//fly ultrashort autolanding EDDH
+//fly straight autolanding EDDH
+//fly ilslanding EDDH
+end

@@ -1,0 +1,6 @@
+Parking Brake RELEASE
+Brakes CHECK during taxi
+Directional Gyro PROPER indication during turns
+Turn Coordinator PROPER indication during turns
+Artificial Horizon ERECT during turns
+Taxi to assigned runway maximum speed is 20 knots

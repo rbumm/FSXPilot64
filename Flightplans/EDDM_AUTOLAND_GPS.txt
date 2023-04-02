@@ -1,0 +1,20 @@
+// -----------------------------------------------------------
+// Flightplans for FSX
+// for use with FSPilot
+// 
+// FSPilot (c) by Scientific Networks, Munich 
+// -----------------------------------------------------------
+// small flightplan routine (Learjet (FS) for takeoff, 
+// 
+//
+//
+set current utc
+set apcontrol plane
+autorudder on
+set speedunits knots
+set distanceunits miles
+run takeoff
+waypoint 7000. 250. DM063
+waypoint 12000. 250. GIVMI
+fly normal autolanding eddm
+end

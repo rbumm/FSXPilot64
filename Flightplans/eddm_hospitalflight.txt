@@ -1,0 +1,116 @@
+// -----------------------------------------------------------
+// Flightplans for FS2004
+// for use with FSPilot
+// 
+// FSPilot (c) 2005 by Scientific Networks, Munich 
+// -----------------------------------------------------------
+// small flightplan routine (helicopter) for takeoff, 
+// GPS navigated flight from Munich Helipad and back
+// GPS targets (Helipads) were hand-defined from Google-Earth and implemented into gpsdef_earth.cfg. 
+// If you need only a few (as here) this is easy and good fun. 
+// Before using google earth GPS data you must transform them from deg degmin degsec
+// to decimal degrees (xx.xxxx). There are several websites explaining how, google for 'GPS transformation'
+// The other way to do this is to fly to the place you want to define (EDMO) and switch the FSPilot internal 
+// LAT LON display 'on'. Write down LAT,LON,ALT and enter in gpsdef_earth.cfg. No transformations required here. 
+//
+wait 5.
+autorudder off
+navlights on
+strobelights on
+landinglights on
+set apcontrol helicopter
+//			we must do this if we fly a helicopter
+//			so calling this flightplane from a plane is nonsense
+set radarrange 2.
+select EDDM
+set speedunits knots
+set distanceunits miles
+run speed 5.
+maintain speed
+set alt 3000.
+set climb 1000.
+run apv 
+head ch
+wait altclimb 1600.
+set speed 60.
+wait altclimb 2000.
+set speed 100.
+wait distout 1.
+set radarrange 10.
+landinglights off
+// 			continous speed control during this flight 
+wait distout 5.
+select HELI_BOGENHAUSEN
+headtarget
+wait distin 2.
+set speed 60.
+run target vectorland
+wait groundcontact
+stop aph
+wait 30.
+set alt 3000.
+set climb 1000.
+run speed 15.
+maintain speed
+run apv 
+head 263.
+wait altclimb 1800.
+set speed 60.
+select HELI_GROSSHADERN
+headtarget
+wait distin 2.
+run target vectorland
+wait groundcontact
+stop aph
+wait 30.
+set alt 3000.
+set climb 1000.
+run speed 15.
+maintain speed
+run apv 
+head 263.
+wait altclimb 2400.
+set speed 100.
+select EDMO_HELIPORT
+headtarget
+wait distin 2.
+set speed 60.
+run target vectorland
+wait groundcontact
+stop aph
+wait 30.
+set alt 3000.
+set climb 1000.
+run speed 15.
+maintain speed
+run apv 
+head 263.
+wait altclimb 2300.
+set speed 100.
+select HELI_MRI
+headtarget
+wait distin 2.
+set speed 60.
+run target vectorland
+wait groundcontact
+stop aph
+wait 30.
+set alt 3000.
+set climb 1000.
+run speed 5.
+maintain speed
+run apv 
+head 90.
+wait altclimb 1900.
+set speed 50.
+wait altclimb 2400.
+set speed 100.
+select EDDM_HELIPORT
+headtarget
+wait distin 2.
+run target vectorland
+wait groundcontact
+stop aph
+wait 30.
+loop
+end

@@ -1,0 +1,35 @@
+// -----------------------------------------------------------
+// Flightplans for FS2004 
+// for use with FSPilot
+// 
+// FSPilot (c) by Scientific Networks, Munich 
+// -----------------------------------------------------------
+// small transatlantic flightplan from greenland to iceland  for Learjet (FS)  or small jet 
+//
+navlights on
+strobelights on
+landinglights on
+set apcontrol plane
+set speedunits knots
+set destination BIRK
+set origin BGBW
+set distanceunits miles
+run takeoff
+head 90.
+set speed 250.
+set climb 2500.
+set alt 27000.
+wait altclimb 10000.
+set climb 1500.
+wait altclimb 26000.
+waypoint 27000. 270. 6240N
+waypoint 27000. 270. 6335N 
+waypoint 27000. 270. EMBLA
+farselect BIRK
+wait distin 100
+set climb -1500.
+set alt 8000.
+wait distin 49
+set speed 250.
+fly ilslanding BIRK 13
+end

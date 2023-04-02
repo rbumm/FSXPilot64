@@ -1,0 +1,40 @@
+// -----------------------------------------------------------
+// Flightplan for FS200x
+// for use with FSPilot
+// 
+// FSPilot (c) 2006 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// Munich (EDDM) to Nizza (LFMN)
+// 
+//
+//
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+landinglights on
+navlights on
+strobelights on
+set origin EDDM
+set destination LFMN
+run takeoff
+waypoint 10000.0 280. MUN  48.18033333  11.81599998
+set speedunits mach
+waypoint 26000.0 0.72 MANAL  47.89950002  11.80000000
+waypoint 26000.0 0.72 TULSI  47.70166664  11.78883336
+waypoint 26000.0 0.72 LIZUM  47.11500000  11.75600001
+waypoint 26000.0 0.72 OLPIX  46.97383334  11.66083336
+waypoint 26000.0 0.72 BZO  46.46366666  11.32183332
+waypoint 26000.0 0.72 SUMIR  46.25883333  11.35966667
+waypoint 26000.0 0.72 NESTI  45.80383333  10.42700001
+waypoint 26000.0 0.72 OSKOR  45.64833336  10.11666667
+waypoint 26000.0 0.72 GIBLO  45.35833333   9.86666667
+waypoint 26000.0 0.72 ROBAS  45.19366666   9.72616666
+waypoint 26000.0 0.72 MONEB  44.62633336   9.25050000
+waypoint 26000.0 0.72 GEN  44.42433332   9.08216666
+waypoint 22000.0 0.72 DORAV  44.32633333   8.85216668
+waypoint 15000.0 0.72 ABN  44.05600000   8.22100000
+set speedunits knots
+waypoint 10000.0 250 NOSTA  43.81949997   7.75533333
+fly normal autolanding LFMN 
+end

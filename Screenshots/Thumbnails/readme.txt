@@ -1,0 +1,1 @@
+Contains the actual thumbnails of screenshots taken with FSP. 

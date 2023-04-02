@@ -1,0 +1,50 @@
+// 
+// FSXPilot (c) by Scientific Networks, Munich
+// 
+// GPS recorded taxi-/flightplan
+// 
+navlights on
+strobelights on
+set apcontrol plane
+set speedunits knots
+set distanceunits miles
+set userinput on
+set speed 5
+maintain speed
+run apv
+gpswaypoint 1491.4 0.0  48.36391040  11.78231623
+gpswaypoint 1491.4 9.5  48.36384210  11.78164772
+gpswaypoint 1491.4 9.6  48.36369525  11.78100312
+gpswaypoint 1491.4 8.5  48.36347668  11.78040634
+gpswaypoint 1491.4 7.3  48.36316249  11.77991798
+gpswaypoint 1491.4 6.6  48.36284831  11.77943218
+gpswaypoint 1491.4 6.6  48.36253753  11.77894382
+gpswaypoint 1491.4 6.8  48.36224383  11.77843156
+gpswaypoint 1491.4 6.8  48.36192623  11.77795345
+gpswaypoint 1491.4 6.8  48.36160863  11.77746594
+gpswaypoint 1491.4 6.8  48.36131834  11.77694343
+gpswaypoint 1491.4 6.8  48.36097342  11.77650715
+gpswaypoint 1491.4 6.9  48.36052263  11.77645593
+gpswaypoint 1491.4 6.9  48.36007525  11.77653874
+gpswaypoint 1491.4 6.8  48.35962787  11.77661302
+gpswaypoint 1491.4 6.8  48.35918049  11.77667962
+gpswaypoint 1491.4 6.8  48.35873312  11.77678207
+gpswaypoint 1491.4 6.8  48.35828232  11.77686147
+gpswaypoint 1491.4 6.7  48.35783495  11.77699466
+gpswaypoint 1491.4 6.8  48.35770517  11.77764523
+gpswaypoint 1491.4 6.9  48.35774615  11.77832057
+gpswaypoint 1491.4 6.9  48.35779738  11.77899676
+gpswaypoint 1491.4 6.8  48.35785885  11.77967551
+gpswaypoint 1491.4 6.6  48.35761638  11.78024583
+gpswaypoint 1491.4 6.8  48.35719291  11.78047549
+gpswaypoint 1491.4 7.0  48.35712802  11.78114997
+gpswaypoint 1491.4 7.0  48.35718266  11.78182531
+stop apv
+stop aph
+head ch
+set speed 0.
+operate wheelbrake
+wait 2.
+release wheelbrake
+flaps 0.
+end

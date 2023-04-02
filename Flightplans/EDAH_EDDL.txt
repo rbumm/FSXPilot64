@@ -1,0 +1,42 @@
+// -----------------------------------------------------------
+// Flightplan for FSX / P3D
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2015 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// add your comment here
+// and here
+// 
+// 
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+autorudder on
+set dep EDAH
+// set your plane ready to takeoff at EDAH RW28
+set dest EDDL
+run takeoff
+set alt 22000.0
+set speed 250.0
+set climb 1600.0
+fly sid MASO1B RW28
+waypoint 22000.0  205.0 RITEV  53.70805740  13.50833035
+waypoint 22000.0  205.0 MAG  51.99498749  11.79430580
+waypoint 22000.0  205.0 OSN  52.20013428   8.28551960
+set alt 9500
+set climb -1200
+set speed 205.0
+waypoint 9500.0  205.0 DOM  51.70953000   7.58713100
+set alt 3000
+set climb -1000
+set speed 160.0
+waypoint 22000.0  170.0 DOMUX  51.41972200   7.53638900
+// please select one of the landing options below according to your personal preferences or aircraft !
+// you may also specify a specific runway at your destination airport ... 
+//fly normal autolanding EDDL
+//fly short autolanding EDDL
+//fly ultrashort autolanding EDDL
+//fly straight autolanding EDDL
+fly ilslanding EDDL
+end

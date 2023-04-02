@@ -1,0 +1,60 @@
+// -----------------------------------------------------------
+// Flightplan for FSX
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2014 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// Flight from Munich to Heringsdorf and back. 
+// Crossing Germany from south to North. 
+// Place your mid range jet or turboprop somewhere at EDDM 
+//
+//
+set origin EDDM
+set destination EDAH
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput off
+autorudder on
+// taxi holdingpoint EDDM 26R
+set elevatortrim 50.
+run takeoff
+set alt 15000.0
+wait altclimb 3500.
+set elevatortrim 0.
+waypoint 15000.0  200.0 RDG  49.04026667  12.52654722
+waypoint 25000.0  220.0 RUDNO  49.33583611  12.54139722
+waypoint 25000.0  220.0 AGNAV  49.56791667  12.61450278
+waypoint 25000.0  220.0 KILNU  50.47694444  12.91166667
+waypoint 25000.0  220.0 ABKIS  50.62971944  13.05722222
+waypoint 25000.0  220.0 EKPEK  50.96449722  13.32135000
+waypoint 25000.0  220.0 RIVSA  51.10860833  13.36666667
+waypoint 25000.0  220.0 OGSEN  51.50111111  13.49194444
+waypoint 25000.0  220.0 DOBUR  51.72666389  13.56472222
+waypoint 25000.0  220.0 PEPOL  52.13028056  13.69722222
+waypoint 25000.0  220.0 SONUD  52.27138333  13.74416667
+waypoint 20000.0  200.0 ANEBO  52.54888611  13.83722222
+fly normal autolanding EDAH 10
+wait 10.
+taxi holdingpoint EDAH 10
+set origin EDAH
+set destination EDDM
+set elevatortrim 50.
+run takeoff
+set alt 15000.0
+wait altclimb 3500.
+set elevatortrim 0.
+waypoint 15000.0  200.0 ANEBO  52.54888611  13.83722222
+waypoint 25000.0  220.0 SONUD  52.27138333  13.74416667
+waypoint 25000.0  220.0 PEPOL  52.13028056  13.69722222
+waypoint 25000.0  220.0 DOBUR  51.72666389  13.56472222
+waypoint 25000.0  220.0 OGSEN  51.50111111  13.49194444
+waypoint 25000.0  220.0 RIVSA  51.10860833  13.36666667
+waypoint 25000.0  220.0 EKPEK  50.96449722  13.32135000
+waypoint 25000.0  220.0 ABKIS  50.62971944  13.05722222
+waypoint 25000.0  220.0 KILNU  50.47694444  12.91166667
+waypoint 25000.0  220.0 AGNAV  49.56791667  12.61450278
+waypoint 25000.0  220.0 RUDNO  49.33583611  12.54139722
+waypoint 15000.0  200.0 RDG  49.04026667  12.52654722
+fly normal autolanding EDDM 26R
+end

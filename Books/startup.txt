@@ -1,0 +1,12 @@
+Engine and Propeller Area CLEAR
+Throttle IDLE
+Fuel Condition Lever AUTO
+Idle Gate Lever FLIGHT IDLE
+Engine Start Selection Switch CRANK 
+Engine Start Selection Switch START A and B
+Start Button Engine 2  
+Generator 2 ON
+Start Button Engine 1 
+Generator 1 ON
+Loadmeter and Voltmeter CHECK for CHARGE
+Engine Start Selection Switch OFF

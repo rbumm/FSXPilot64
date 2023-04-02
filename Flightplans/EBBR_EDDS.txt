@@ -1,0 +1,45 @@
+// -----------------------------------------------------------
+// Flightplan for FSX / P3D
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2015 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// add your comment here
+// and here
+// 
+// 
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+autorudder on
+set dep EBBR
+// set your plane ready to takeoff at EBBR 25R
+set dest EDDS
+run takeoff
+set alt 21000.0
+set speed 160.0
+set climb 1600.0
+wait 15.
+fly sid SOPO3D RW25R SOPOK
+waypoint 21000.0  205.0 ETENO  50.18194580   6.19165993
+waypoint 21000.0  205.0 ROPUV 50.22194400   6.84833400
+waypoint 21000.0  205.0 RUDUS  50.04758835   8.07826042
+waypoint 21000.0  205.0 UBENO  49.73719500   8.69000600
+set alt 6500
+set climb -1020
+set speed 170.0
+waypoint  6500.0 170.0 KRH  49.99294500   8.58423600
+set alt 4000
+set climb -1020
+set speed 170.0
+select EDDS
+fly star BADS2A ALL BADSO
+// please select one of the landing options below according to your personal preferences or aircraft !
+// you may also specify a specific runway at your destination airport ... 
+//fly normal autolanding EDDS
+//fly short autolanding EDDS
+//fly ultrashort autolanding EDDS
+//fly straight autolanding EDDS
+fly ilslanding EDDS 25
+end

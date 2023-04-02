@@ -1,0 +1,40 @@
+// -----------------------------------------------------------
+// Flightplan for FSX / P3D
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2015 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// add your comment here
+// and here
+// 
+// 
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+autorudder on
+set dep EBBR
+// set your plane ready to takeoff at EBBR 25R
+set dest EDDV
+run takeoff
+set alt 19000.0
+set speed 160.0
+set climb 1600.0
+wait 15.
+fly sid LNO4Z RW25R LNO
+waypoint 19000.0  205.0 PODEN  50.68916702   6.14027023
+waypoint 19000.0  205.0 KENUM  50.72249985   6.23943996
+waypoint 19000.0  205.0 HMM  51.85686700   7.70829500
+set alt 4000
+set climb -600
+set 170.0
+select EDDV
+fly star OSN8P RW27R OSN
+// please select one of the landing options below according to your personal preferences or aircraft !
+// you may also specify a specific runway at your destination airport ... 
+//fly normal autolanding EDDV
+//fly short autolanding EDDV
+//fly ultrashort autolanding EDDV
+//fly straight autolanding EDDV
+fly ilslanding EDDV 27R
+end

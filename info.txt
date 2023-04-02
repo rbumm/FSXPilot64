@@ -1,0 +1,7 @@
+Hi, 
+
+The next version of the ASAP beta can not be upgraded automatically. 
+Please redownload and install the program from the homepage. 
+
+The development team
+

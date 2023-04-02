@@ -1,0 +1,9 @@
+Strobe Light OFF
+Taxi Lights ON
+Landing Lights OFF
+Flaps RETRACT
+Anti Ice OFF
+Transponder 1200
+Speed Max. 20 knots
+Elevator Trim TAKEOFF SETTING
+Avionics and Radios AS REQUIRED

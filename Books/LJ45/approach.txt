@@ -1,0 +1,14 @@
+Localizer Level Flight :
+Speed: Establish 160 knots 30%
+Landing Lights ON
+Flaps 15 deg
+Speed: Establish 145 knots 35%
+Flaps 30 deg
+Speed: Establish 130 knots 30%
+Landing Gear DOWN
+when turning toward runway set flaps 45 deg or FULL DOWN
+at Final Glideslope Descent Establish 120 knots 30%
+Descent Rate -800 feet per minute
+Elevator Trim AS DESIRED
+Parking Brake VERIFY OFF
+De Ice AS REQUIRED

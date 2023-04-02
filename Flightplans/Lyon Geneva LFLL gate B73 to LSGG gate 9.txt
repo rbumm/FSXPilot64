@@ -1,0 +1,164 @@
+// 
+// FSXPilot (c) by Scientific Networks, Munich
+// 
+// GPS recorded taxi-/flightplan
+// 
+engine stop
+release wheelbrake
+release parkingbrakes
+navlights on
+strobelights on
+set apcontrol plane
+set speedunits knots
+set distanceunits miles
+set userinput on
+toggle pushback
+wait 45
+toggle pushback
+engine start
+set speed 5
+maintain speed
+run apv
+gpswaypoint 830.4 0.0  45.72140242   5.08253543
+set speed 15
+gpswaypoint 830.4 20.0  45.72093796   5.08257599
+gpswaypoint 830.4 13.3  45.72048034   5.08261654
+gpswaypoint 830.4 13.3  45.72004662   5.08278986
+gpswaypoint 830.4 13.3  45.71969487   5.08321205
+gpswaypoint 830.4 13.3  45.71951387   5.08380329
+gpswaypoint 830.4 13.3  45.71925091   5.08434074
+gpswaypoint 830.4 13.3  45.71886500   5.08467584
+gpswaypoint 830.4 33.3  45.71839713   5.08477317
+gpswaypoint 830.4 33.3  45.71793610   5.08482782
+gpswaypoint 830.4 33.3  45.71747506   5.08488246
+gpswaypoint 830.4 33.3  45.71701061   5.08493667
+gpswaypoint 830.4 33.3  45.71655298   5.08499131
+gpswaypoint 830.4 33.3  45.71608853   5.08504595
+gpswaypoint 830.4 33.3  45.71562749   5.08510017
+gpswaypoint 830.4 20.0  45.71516304   5.08515524
+gpswaypoint 830.4 13.3  45.71471225   5.08520860
+gpswaypoint 830.4 13.3  45.71426145   5.08526153
+gpswaypoint 830.4 13.3  45.71381066   5.08531532
+gpswaypoint 830.4 6.7  45.71335987   5.08536825
+gpswaypoint 830.4 6.7  45.71290908   5.08542162
+gpswaypoint 830.4 6.7  45.71245828   5.08547498
+gpswaypoint 830.4 6.7  45.71201091   5.08554114
+gpswaypoint 830.4 6.7  45.71157378   5.08572727
+gpswaypoint 830.4 6.7  45.71125276   5.08617721
+gpswaypoint 830.4 6.7  45.71112298   5.08679448
+gpswaypoint 830.4 6.7  45.71101370   5.08742243
+gpswaypoint 830.4 6.7  45.71090783   5.08805167
+gpswaypoint 830.4 6.7  45.71080538   5.08868132
+gpswaypoint 830.4 6.7  45.71082587   5.08932934
+gpswaypoint 830.4 6.7  45.71109908   5.08984800
+set speed 5
+gpswaypoint 830.4 6.7  45.71148840   5.09017671
+gpswaypoint 830.4 6.7  45.71193919   5.09015835
+head 357
+wait 18
+stop apv
+stop aph
+head ch
+set speed 0.
+operate wheelbrake
+wait 2.
+release wheelbrake
+flaps 0.
+
+wait 20
+
+set origin LFLL
+set destination LSGG
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+autorudder on
+run takeoff
+set alt 7000.0
+waypoint 7000.0  280.0 LSE  45.74552778   5.09058333
+waypoint 7000.0  280.0 ODVIL  45.92500278   5.49444444
+waypoint 7000.0  280.0 ARGIS  45.97111111   5.59916667
+find bestrunway LSGG
+select approachentry
+set alt 7000.
+flaps 1.
+wait distin 2.
+select ilsentry
+set alt 6000.
+wait distin 2.
+select bestrunway
+set speed 180.
+set ils
+stop aph
+stop apv
+
+wait 5
+
+navlights on
+strobelights on
+set apcontrol plane
+set speedunits knots
+set distanceunits miles
+set userinput on
+set speed 15
+maintain speed
+run apv
+gpswaypoint 1419.8 0.0  46.24182527   6.11438492
+gpswaypoint 1419.8 26.7  46.24212579   6.11486943
+gpswaypoint 1419.8 26.7  46.24240925   6.11537786
+gpswaypoint 1419.8 26.7  46.24267562   6.11590720
+gpswaypoint 1419.8 26.7  46.24289761   6.11647880
+gpswaypoint 1419.8 26.7  46.24307861   6.11710675
+gpswaypoint 1419.8 26.7  46.24323228   6.11772061
+gpswaypoint 1419.8 26.7  46.24335181   6.11835283
+gpswaypoint 1419.8 13.3  46.24342695   6.11900085
+gpswaypoint 1419.8 13.3  46.24318789   6.11955836
+gpswaypoint 1419.8 13.3  46.24274393   6.11942816
+gpswaypoint 1419.8 20.0  46.24248438   6.11889711
+gpswaypoint 1419.8 20.0  46.24219068   6.11838314
+gpswaypoint 1419.8 20.0  46.24186625   6.11790716
+gpswaypoint 1419.8 20.0  46.24154181   6.11742691
+gpswaypoint 1419.8 40.0  46.24122421   6.11695563
+gpswaypoint 1419.8 40.0  46.24090319   6.11647880
+gpswaypoint 1419.8 40.0  46.24058217   6.11600239
+gpswaypoint 1419.8 40.0  46.24025774   6.11552556
+gpswaypoint 1419.8 40.0  46.23993330   6.11504232
+gpswaypoint 1419.8 40.0  46.23960887   6.11456464
+gpswaypoint 1419.8 40.0  46.23928785   6.11408780
+gpswaypoint 1419.8 40.0  46.23896342   6.11360585
+gpswaypoint 1419.8 40.0  46.23863898   6.11312859
+gpswaypoint 1419.8 33.3  46.23831455   6.11264834
+gpswaypoint 1419.8 26.7  46.23798670   6.11216297
+gpswaypoint 1419.8 20.0  46.23766910   6.11169126
+gpswaypoint 1419.8 20.0  46.23733442   6.11122724
+gpswaypoint 1419.8 20.0  46.23690070   6.11105563
+gpswaypoint 1419.8 20.0  46.23644649   6.11117900
+gpswaypoint 1419.8 20.0  46.23603668   6.11148806
+gpswaypoint 1419.8 20.0  46.23558589   6.11159564
+gpswaypoint 1419.8 20.0  46.23529219   6.11108295
+gpswaypoint 1419.8 26.7  46.23497117   6.11062618
+gpswaypoint 1419.8 40.0  46.23463308   6.11013953
+gpswaypoint 1419.8 40.0  46.23430523   6.10966910
+gpswaypoint 1419.8 40.0  46.23397396   6.10919440
+gpswaypoint 1419.8 26.7  46.23364270   6.10871629
+gpswaypoint 1419.8 26.7  46.23327045   6.10830221
+gpswaypoint 1419.8 26.7  46.23284357   6.10808578
+gpswaypoint 1419.8 26.7  46.23246449   6.10773274
+gpswaypoint 1419.8 13.3  46.23214689   6.10726103
+gpswaypoint 1419.8 13.3  46.23186344   6.10674877
+set speed 5
+gpswaypoint 1419.8 6.7  46.23156291   6.10626425
+gpswaypoint 1419.8 6.7  46.23113944   6.10648623
+gpswaypoint 1420.3 0.0  46.23097210   6.10673254
+stop apv
+stop aph
+head ch
+set speed 0.
+operate wheelbrake
+wait 2.
+release wheelbrake
+flaps 0.
+operate parkingbrakes
+engine stop
+end

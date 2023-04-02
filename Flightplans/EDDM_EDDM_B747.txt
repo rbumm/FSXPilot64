@@ -1,0 +1,65 @@
+// -----------------------------------------------------------
+// Flightplan for FSX / P3D
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2015 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// add your comment here
+// read an article on this flightplan in the support section
+// 
+// 
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+autorudder on
+set dep EDDM
+set dest EDDM
+set cmdonly off
+run takeoff
+set alt 5000.0
+// Please set a value for initial speed
+set speed 250.0
+// Please set a value for initial climb rate 
+set climb 1500.0
+waypoint 5000 250 MIQ
+exec AcroRd32.exe /A "page=48=OpenActions" ./charts/eddm.pdf 
+// Approach charts
+waypoint 5000 250 MBG 
+head 202.
+wait distout 2.
+flaps 1
+set speed 220.0
+wait distout 4.
+flaps 2
+set speed 200.0
+wait distout 6.
+flaps 3
+set speed 190.0
+wait distout 7.
+set heading 238.
+wait distout 8.5
+select EDDM 26R
+headtarget
+set ils
+wait distin 10.
+gear down
+flaps 4
+wait distin 8.
+flaps 5
+wait altdesc 1530.
+set speed 0.
+wait groundcontact
+wait 5
+retrothrust on
+operate wheelbrake
+wait speedless 80.
+retrothrust off
+flaps 0
+wait speedless 2
+release wheelbrake
+switch apbuttons off
+throttle zero
+exec AcroRd32.exe /A "page=42=OpenActions" ./charts/eddm.pdf 
+// Taxi charts
+end

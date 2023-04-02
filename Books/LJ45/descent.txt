@@ -1,0 +1,9 @@
+Atis and Airport Information CHECK
+Altimeter CHECK
+Radios SET
+Automatic Torque Switches OFF
+Descent Speed 200 knots 12%
+Descent Rate -1500 feet per minute
+Flaps and Landing Gear CHECK UP
+At Transition Altitude reset Altimeter to local
+Check Weather 

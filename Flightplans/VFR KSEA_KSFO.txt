@@ -1,0 +1,29 @@
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2013 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// demonstrating the use of timeacc and 
+// selection of a specific runway for ILS landing
+// timeacc will be automatically reduced to 1 after reaching the approach entry fix
+//
+set origin KSEA
+set destination KSFO 
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput off
+autorudder on
+run takeoff
+set timeacc 16.
+waypoint 10000.0 250 BTG 45.74780556 -122.59153611
+set speedunits mach
+waypoint 26000.0 0.72 LMT 42.15315000 -121.72752778
+waypoint 26000.0 0.72 RBL 40.09890833 -122.23635556
+set speedunits knots
+waypoint 10000.0 250. OAK 37.72591667 -122.22358889
+select KSFO 
+wait distin 30.
+set timeacc 8.
+set speed 220.
+fly ilslanding KSFO 19L
+end

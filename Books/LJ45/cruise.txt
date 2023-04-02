@@ -1,0 +1,13 @@
+Accelerate to cruise speed
+Power Management Switch SET cruise
+at 6000 feet 260 knots 84%
+at 9000 feet 250 knots 80%
+at 12000 feet 240 knots 78%
+at 18000 feet 225 knots 72%
+at 24000 feet 210 knots 66%
+Service Ceiling  is 25000 feet
+Engine and Instruments CHECK
+Fuel Quantity CHECK
+Radios TUNED and SET
+Autopilot CHECK and SET
+Lights as required

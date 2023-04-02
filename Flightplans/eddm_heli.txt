@@ -1,0 +1,48 @@
+// -----------------------------------------------------------
+// Flightplans for FS2004 
+// for use with FSPilot
+// 
+// FSPilot (c) 2005 by Scientific Networks, Munich 
+// -----------------------------------------------------------
+// small flightplan routine (helicopter) for takeoff, 
+// GPS navigated flight from Munich Helipad and back
+//
+//
+wait 5.
+autorudder off
+navlights on
+strobelights on
+landinglights on
+set apcontrol helicopter
+set radarrange 2.
+select EDDM
+set speedunits knots
+set distanceunits miles
+set alt 3000.
+set climb 1000.
+run speed 5.
+maintain speed
+run apv 
+head ch
+wait altclimb 1600.
+set speed 40.
+wait altclimb 2000.
+set speed 100.
+wait distout 1.
+set radarrange 10.
+landinglights off
+// 			continous speed control during this flight 
+wait distout 5.
+waypoint 3000. 100. DM453
+waypoint 3000. 80. DM050
+select EDDM_HELIPORT
+headtarget
+wait distin 2.5
+set speed 60.
+wait distin 2.
+run target vectorland
+wait groundcontact
+stop aph
+wait 30.
+loop
+end

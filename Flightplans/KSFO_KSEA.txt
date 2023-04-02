@@ -1,0 +1,44 @@
+// -----------------------------------------------------------
+// Flightplan for FSX
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2012 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// add your comment here 
+// and here
+//
+//
+set origin KSFO
+set destination KSEA
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+autorudder on
+run takeoff
+set alt 26000.0
+waypoint 26000.0  280.0 REBAS  37.94055556 -122.38361111
+waypoint 26000.0  280.0 SAWNA  38.86833333 -122.40166667
+waypoint 26000.0  280.0 RBL  40.09888889 -122.23611111
+waypoint 26000.0  280.0 LMT  42.15305556 -121.72750000
+waypoint 26000.0  280.0 BTG  45.74777778 -122.59138889
+waypoint 26000.0  280.0 PTERA  46.09416667 -122.67722222
+waypoint 26000.0  280.0 KRIEG  46.32000000 -122.72194444
+waypoint 26000.0  280.0 HAWKZ  46.78444444 -122.73888889
+waypoint 26000.0  280.0 LIINE  46.84416667 -122.66833333
+waypoint 26000.0  280.0 PIKEZ  46.93750000 -122.56194444
+waypoint 26000.0  280.0 COFAY  47.07861111 -122.50027778
+waypoint 26000.0  280.0 BREVE  47.18972222 -122.48000000
+waypoint 26000.0  280.0 NETTZ  47.35222222 -122.45527778
+waypoint 26000.0  280.0 KWEST  47.42055556 -122.45527778
+find bestrunway KSEA
+select approachentry
+flaps 1.
+wait distin 2.
+select ilsentry
+wait distin 2.
+select bestrunway
+set ils
+stop aph
+stop apv
+end

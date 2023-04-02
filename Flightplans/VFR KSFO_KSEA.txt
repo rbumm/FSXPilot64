@@ -1,0 +1,33 @@
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2012 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// Quick flight from San Francisco to Seattle
+// demonstrating the use of timeacc and 
+// selection of a specific runway for GPS autolanding
+// timeacc will be automatically reduced to 1 after reaching the first GPS autolanding fix
+//
+//
+set origin KSFO
+set destination KSEA
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput off
+autorudder on
+run takeoff
+set alt 10000.0
+set timeacc 4.
+waypoint 10000.0  250.0 OAK  37.72591667 -122.22358889
+set timeacc 16.
+waypoint 26000.0 270 RBL 40.09890833 -122.23635556
+set speedunits mach
+waypoint 26000.0 0.72 LMT  42.15315000 -121.72752778
+set speedunits knots
+waypoint 10000.0 250 BTG  45.74780556 -122.59153611
+set speed 250
+select KSEA
+wait distin 30.
+set timeacc 8.
+fly short autolanding KSEA 16L 
+end

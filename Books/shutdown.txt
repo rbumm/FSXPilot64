@@ -1,0 +1,17 @@
+Parking Brake SET
+Throttle IDLE
+F/D OFF
+Avionics OFF
+Taxi Lights OFF
+Logo Lights and Wing Lights OFF
+Nav Lights OFF
+Fuel Cond. Lever FUEL CUTOFF
+Idle Gate Lever GROUND IDLE
+Power Management Switch SET TO take off
+Beacon OFF
+Generators OFF
+Panel Light OFF
+Battery Switch OFF
+Parking Brake Verify SET
+Throttle Verify IDLE
+All Switches Verify OFF

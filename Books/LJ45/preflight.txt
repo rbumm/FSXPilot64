@@ -1,0 +1,26 @@
+Ready for the preflight checklist sir ? 
+ok. 
+Parking Brakes SET
+Battery Switch OFF
+Generator Switches OFF
+Power Management Switch CHECK SET TO take off
+Automatic Torque Switches CHECK OFF
+Throttle IDLE
+Landing Gear Lever CHECK DOWN
+Propeller HIGH RPM
+Fuel Cond. Lever FUEL CUTOFF
+Idle Gate Lever GROUND IDLE
+Flaps UP
+Battery Switch ON
+Panel Lights ON if required
+Fuel Quantity CHECK
+Flight controls CHECK
+Avionics Master Switch ON
+Check Weather 
+Anti-ice CHECK
+Request Clearance
+Transponder STANDBY
+Beacon ON
+Captain. Do we need to conduct fuel loading operations?	
+Ok Sir. 
+End of preflight checklist. 

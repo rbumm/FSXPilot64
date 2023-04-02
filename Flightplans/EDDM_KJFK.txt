@@ -1,0 +1,107 @@
+// -----------------------------------------------------------
+// Flightplan for FSX / P3D
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2015 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// add your comment here
+// and here
+// 
+// 
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+autorudder on
+set dep EDDM
+set dest KJFK
+run takeoff
+set alt 33000.0
+// Please set a value for initial speed
+set speed 280.0
+// Please set a value for initial climb rate 
+set climb 1500.0
+wait 15.
+waypoint 33000.0  280.0 KPT  47.74583435  10.34972191
+// distance from KPT to RAVED : 27.5 miles
+waypoint 33000.0  280.0 RAVED  47.72916794   9.66944027
+// distance from RAVED to NINTU : 193.8 miles
+waypoint 33000.0  280.0 NINTU  46.14722061   5.55305004
+// warning: check next waypoint. waypoint dist REPSI : 5530.4 nm
+// waypoint 33000.0  280.0 REPSI -45.36666870  -5.27165985
+// distance from NINTU to LERGA : 92.7 miles
+waypoint 33000.0  280.0 LERGA  45.25722122   3.75026989
+// distance from LERGA to OLRAK : 48.1 miles
+waypoint 33000.0  280.0 OLRAK  44.78444290   2.83721995
+// distance from OLRAK to NARAK : 55.1 miles
+waypoint 33000.0  280.0 NARAK  44.29527664   1.74888003
+// distance from NARAK to AGN : 45.0 miles
+waypoint 33000.0  280.0 AGN  43.88802719   0.87286103
+// distance from AGN to PPN : 132.3 miles
+waypoint 33000.0  280.0 PPN  42.73374939  -1.70200002
+// warning: check next waypoint. waypoint dist MITUM : 4547.4 nm
+// waypoint 33000.0  280.0 MITUM  35.70553207 -106.09696960
+// distance from PPN to BOSIO : 165.5 miles
+waypoint 33000.0  280.0 BOSIO  40.34085846  -3.52057004
+// distance from BOSIO to KAMPO : 44.0 miles
+waypoint 33000.0  280.0 KAMPO  39.73333359  -4.05537987
+// warning: check next waypoint. waypoint dist MONTO : 4475.1 nm
+// waypoint 33000.0  280.0 MONTO   0.00233300  65.54866028
+// distance from KAMPO to HIJ : 88.3 miles
+waypoint 33000.0  280.0 HIJ  38.50813293  -5.09968281
+// distance from HIJ to SVL : 72.1 miles
+waypoint 33000.0  280.0 SVL  37.42788315  -5.76220798
+// distance from SVL to KORNO : 124.7 miles
+waypoint 33000.0  280.0 KORNO  35.83333206  -7.41665983
+// distance from KORNO to ABODA : 32.4 miles
+waypoint 33000.0  280.0 ABODA  35.41389084  -7.83333015
+// distance from ABODA to AMETA : 185.3 miles
+waypoint 33000.0  280.0 AMETA  32.99750137 -10.14832973
+// warning: check next waypoint. waypoint dist TURMA : 3952.6 nm
+// waypoint 33000.0  280.0 TURMA -19.97363091 -50.96173096
+// distance from AMETA to TERTO : 218.1 miles
+waypoint 33000.0  280.0 TERTO  30.10416603 -12.71722031
+// distance from TERTO to LZR : 70.0 miles
+waypoint 33000.0  280.0 LZR  29.16600227 -13.51072502
+// distance from LZR to LIMAL : 333.4 miles
+waypoint 33000.0  280.0 LIMAL  25.00000000 -17.62557983
+// distance from LIMAL to ISOKA : 206.1 miles
+waypoint 33000.0  280.0 ISOKA  22.08136177 -19.59000969
+// distance from ISOKA to SVT : 442.6 miles
+waypoint 33000.0  280.0 SVT  16.82886124 -25.06511116
+// distance from SVT to KENOX : 232.3 miles
+waypoint 33000.0  280.0 KENOX  14.81000042 -28.49165916
+// distance from KENOX to SAGRO : 289.6 miles
+waypoint 33000.0  280.0 SAGRO  10.58333302 -30.86333084
+// distance from SAGRO to POKSI : 221.1 miles
+waypoint 33000.0  280.0 POKSI  11.85107231 -34.38388824
+// distance from POKSI to IRELA : 220.4 miles
+waypoint 33000.0  280.0 IRELA  14.00000000 -37.43333054
+// distance from IRELA to BUTUX : 518.2 miles
+waypoint 33000.0  280.0 BUTUX  18.00000000 -45.38000107
+// distance from BUTUX to FIVZE : 918.6 miles
+waypoint 33000.0  280.0 FIVZE  25.00000000 -60.00000000
+// distance from FIVZE to AZEZU : 998.9 miles
+waypoint 33000.0  280.0 AZEZU  37.87447357 -72.37866211
+// distance from AZEZU to AGUNE : 25.7 miles
+waypoint 33000.0  280.0 AGUNE  38.10805511 -72.83387756
+// distance from AGUNE to BOJAN : 8.0 miles
+waypoint 33000.0  280.0 BOJAN  38.18166733 -72.97611237
+// distance from BOJAN to HAPVY : 36.6 miles
+waypoint 33000.0  280.0 HAPVY  38.51333237 -73.62666321
+// distance from HAPVY to WICKE : 10.0 miles
+waypoint 33000.0  280.0 WICKE  38.60333252 -73.80526733
+// warning: check next waypoint. waypoint dist CORNE : 8893.0 nm
+// waypoint 33000.0  280.0 CORNE -35.84162903 146.61480713
+// distance from WICKE to DASHA : 30.0 miles
+waypoint 33000.0  280.0 DASHA  38.87196732 -74.34454346
+// warning: check next waypoint. waypoint dist SIE : 6096.5 nm
+// waypoint 33000.0  280.0 SIE  34.62837982 135.66204834
+// please select one of the landing options below according to your personal preferences or aircraft !
+// you may also specify a specific runway at your destination airport ... 
+fly normal autolanding KJFK
+//fly short autolanding KJFK
+//fly ultrashort autolanding KJFK
+//fly straight autolanding KJFK
+//fly ilslanding KJFK
+end

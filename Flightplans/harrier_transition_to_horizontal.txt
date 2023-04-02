@@ -1,0 +1,43 @@
+// -----------------------------------------------------------
+// Flightplans for FS2004 
+// for use with FSPilot
+// 
+// FSPilot (c) 2005 by Scientific Networks, Munich 
+// -----------------------------------------------------------
+// small flightplan routine (helicopter) for takeoff, 
+// GPS navigated flight from Munich Helipad and back
+//
+//
+wait 5.
+autorudder off
+set apcontrol helicopter
+set speedunits knots
+set distanceunits miles
+stabilize
+set speed 0.
+set climb 0.
+set speed 5.
+gear up
+wait 3.
+set speed 10.
+wait 5.
+set speed 60.
+set apcontrol plane
+flaps 6.
+wait 1.
+set speed 180.
+flaps 5.
+wait 1.
+flaps 4.
+wait 1.
+flaps 3.
+wait 1.
+flaps 2.
+wait 1.
+flaps 1.
+wait 1.
+flaps 0.
+wait 1.
+set speed 280.
+speak transition to horizontal flight ok, sir
+end

@@ -1,0 +1,10 @@
+Automatic Torque Switches BOTH ON
+Brakes RELEASE
+V1 at 100 knots
+Pitch 10 to 15 degrees
+V2 at 105 knots
+At Positive Climb Rate Touch Brakes
+Landing Gear RETRACT
+Power Management Switch SET MCT 
+Flaps RETRACT
+Annunciator Lights Engine Instruments CHECK

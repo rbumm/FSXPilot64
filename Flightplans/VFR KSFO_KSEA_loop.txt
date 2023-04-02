@@ -1,0 +1,60 @@
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2012 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// Quick flight from San Francisco to Seattle and back
+// demonstrating the use of timeacc and 
+// selection of a specific runway for GPS autolanding
+// timeacc will be automatically reduced to 1 after reaching the first GPS autolanding fix
+// After landing in KSFO again, flightplan will be restarted and loop forever. 
+//
+set origin KSFO
+set destination KSEA
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput off
+autorudder on
+run takeoff
+set alt 26000.0
+set timeacc 4.
+waypoint 10000.0 250 OAK  37.72591667 -122.22358889
+set timeacc 16.
+set speedunits mach
+waypoint 26000.0 0.72 RBL 40.09890833 -122.23635556
+waypoint 26000.0 0.72 LMT 42.15315000 -121.72752778
+set speedunits knots
+waypoint 10000.0 250 BTG 45.74780556 -122.59153611
+select KSEA
+wait distin 30.
+set timeacc 8.
+fly short autolanding KSEA 16L 
+echo Welcome to Seattle !
+wait 20.
+efismode nav
+set origin KSEA
+set destination KSFO 
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput off
+autorudder on
+run takeoff
+set timeacc 8.
+waypoint 15000.0 250 BTG  45.74780556 -122.59153611
+set speedunits mach
+set timeacc 16.
+waypoint 26000.0 0.72 LMT  42.15315000 -121.72752778
+waypoint 26000.0 0.72 RBL  40.09890833 -122.23635556
+set speedunits knots
+waypoint 10000.0 250. OAK  37.72591667 -122.22358889
+select KSFO
+wait distin 30.
+set timeacc 8.
+set speed 220.
+fly ilslanding KSFO 19L
+echo Welcome to San Francisco !
+wait 20.
+efismode nav
+loop
+end

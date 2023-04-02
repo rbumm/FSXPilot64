@@ -1,0 +1,8 @@
+Power Management Switch SET climb
+Autopilot CHECK and SET
+Taxi Lights and Landing Lights OFF
+Airspeed 180 knots at 1800 feet per minute 85%
+above 12000 feet 170 knots at 1500 feet per minute 75%
+Engine Instruments MONITOR
+ATC AS REQUIRED
+At Transition Altitude set Altimeter to 29,92 or 1013 millibars

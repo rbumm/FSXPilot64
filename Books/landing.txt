@@ -1,0 +1,7 @@
+Landing Gear CHECK DOWN, 3 GREEN
+Autopilot OFF
+Landing Speed 110 knots
+Touchdown MAIN WHEELS FIRST
+Landing Roll LOWER NOSE WHEEL
+After touchdown Apply Reverse Thrust, at
+60 knots Cancel Reverse Thrust

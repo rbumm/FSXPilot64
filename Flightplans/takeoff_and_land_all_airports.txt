@@ -1,0 +1,35 @@
+// -----------------------------------------------------------
+// Flightplan for FSXPilot > V 1.33 
+// for use with FSXPilot universal autopilot
+// 
+// FSPilot (c) 2012 by R. Bumm, Munich 
+// -----------------------------------------------------------
+// small flightplan routine for takeoff, holding,  and land again on all airports 
+// expects you on a runway
+// tested ar eddm
+// have fun
+//
+set apcontrol plane
+set speedunits knots
+set autorudder on
+set home airport
+set distanceunits miles
+run takeoff 
+set alt 10000.
+wait altclimb 4000.
+set alt 2000.
+set desc -1500.
+fly holding
+wait altdesc 3000.
+// wait until aircraft has descended to 3000 ft
+set alt 3000.
+fly holding
+// wait until two foldings completed
+wait trackingcounter 2.
+fly short autolanding home_airport
+find bestrunway home_airport
+taxi holdingpoint bestrunway
+run takeoff 
+wait 60.
+fly short autolanding home_airport
+end

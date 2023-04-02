@@ -1,0 +1,40 @@
+// -----------------------------------------------------------
+// Flightplan for FSX / P3D
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2015 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// add your comment here
+// and here
+// 
+// 
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+autorudder on
+set dep EBBR
+// set your plane ready to takeoff at EBBR 25R
+set dest EDDN
+run takeoff
+set alt 19000.0
+set speed 160.0
+set climb 1600.0
+wait 15.
+fly sid LNO4Z RW25R LNO
+waypoint 19000.0  205.0 ARCKY  50.29916763   6.13221979
+waypoint 19000.0  205.0 NTM  50.01586151   6.53178883
+waypoint 19000.0  205.0 FFM  50.05374200   8.63709200
+set alt 5000
+set climb -615
+set speed 170.0
+select EDDN
+fly star ERTE2T ALL ERTES
+// please select one of the landing options below according to your personal preferences or aircraft !
+// you may also specify a specific runway at your destination airport ... 
+//fly normal autolanding EDDN
+//fly short autolanding EDDN
+//fly ultrashort autolanding EDDN
+//fly straight autolanding EDDN
+fly ilslanding EDDN
+end

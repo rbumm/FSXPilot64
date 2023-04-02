@@ -1,0 +1,37 @@
+// -----------------------------------------------------------
+// Flightplan
+// for use with FSPilot
+// 
+// FSPilot (c) 2006 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// Direct GPS flight from London, UK to San Francisco, US.  
+// Flightplan for the standard FS Boeing 747
+// Use timeacc up to 64x between the destinations. 
+// Reduce (stepwise) to normal about 300 miles inbound KSFO. 
+//
+//
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+set origin EGLL
+set destination KSFO
+autorudder on
+run takeoff
+set alt 35000.0
+farselect KSFO
+headtarget
+wait altclimb 10000.
+set speedunits mach
+set speed 0.72
+//                        fly. after a while (some 20 hours) .........
+wait distin 50.
+set speedunits knots
+fly ilslanding KSFO
+cls
+echo -------------------------------------
+echo Thank you for flying FSP today. 
+echo Enjoy your stay in San Francisco
+echo and have a nice evening. 
+echo -------------------------------------
+end

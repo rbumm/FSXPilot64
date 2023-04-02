@@ -1,0 +1,36 @@
+// -----------------------------------------------------------
+// Flightplan for FSX
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2012 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// add your comment here 
+// and here
+//
+//
+set origin EDDM
+set destination EDAH
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+autorudder on
+taxi holdingpoint EDDM 26R
+set elevatortrim 50
+run takeoff
+set alt 25000.0
+set elevatortrim 0
+waypoint 25000.0  300.0 RDG  49.04026667  12.52654722
+waypoint 25000.0  300.0 RUDNO  49.33583611  12.54139722
+waypoint 25000.0  300.0 AGNAV  49.56791667  12.61450278
+waypoint 25000.0  300.0 KILNU  50.47694444  12.91166667
+waypoint 25000.0  300.0 ABKIS  50.62971944  13.05722222
+waypoint 25000.0  300.0 EKPEK  50.96449722  13.32135000
+waypoint 25000.0  300.0 RIVSA  51.10860833  13.36666667
+waypoint 25000.0  300.0 OGSEN  51.50111111  13.49194444
+waypoint 25000.0  300.0 DOBUR  51.72666389  13.56472222
+waypoint 25000.0  300.0 PEPOL  52.13028056  13.69722222
+waypoint 25000.0  300.0 SONUD  52.27138333  13.74416667
+waypoint 25000.0  300.0 ANEBO  52.54888611  13.83722222
+fly normal autolanding EDAH 10
+end

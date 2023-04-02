@@ -1,0 +1,53 @@
+// -----------------------------------------------------------
+// Flightplans for FSX
+// for use with FSPilot
+// 
+// FSPilot (c) by Scientific Networks, Munich 
+// -----------------------------------------------------------
+// small flightplan routine (Learjet (FS) for takeoff, 
+// VOR and GPS navigated flight from Munich RW of your choice to Frankfurt runway 25l ilslanded and back to Munich gpslanded bestrunway acc wind
+// notice the reduction of waypoint climbing that you can modify acc to your actual plane - avoids stall
+// use less climb for leight or less powerful aircrafts
+//
+//
+set current utc
+set apcontrol plane
+autorudder on
+set speedunits knots
+set distanceunits miles
+set origin EDDM
+set destination EDDF
+set cmdonly on
+run takeoff
+set waypointclimb 3000.
+waypoint 20000. 250. DM063
+set waypointclimb 2000.
+waypoint 20000. 250. GIVMI
+set waypointclimb 1500.
+waypoint 20000. 250. TALAL
+waypoint 20000. 280. NORAS
+waypoint 20000. 250. WUR 
+waypoint 10000. 240. PSA
+waypoint 6000. 235. CHA
+fly ilslanding EDDF 25L
+set origin EDDF
+set destination EDDM
+find bestrunway eddf
+taxi holdingpoint bestrunway
+run takeoff
+set speed 250.
+set alt 22000.
+set climb 4000.
+farselect eddm
+headtarget
+wait altclimb 10000.
+set climb 2000.
+set speed 272.
+wait distin 100.
+set speed 260.
+set alt 10000.
+set climb -1500.
+wait distin 50.
+set speed 250.
+fly normal autolanding eddm
+end

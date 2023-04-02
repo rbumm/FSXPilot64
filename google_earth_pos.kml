@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://earth.google.com/kml/2.0'><Placemark>
+  <name>Your aircraft pos (11/03/2013 17:51)</name>
+  <description>This is a flightsimulator aircraft position saved by FSPilot V 1.4 on 11/03/2013 17:51.</description>
+  <LookAt>
+    <longitude>-38.59473181</longitude>
+    <latitude> 14.64545725</latitude>
+    <range>12058.55</range>
+    <tilt>80.00000000000</tilt>
+    <heading>313.803259</heading>
+  </LookAt>
+  <styleUrl>root://styleMaps#default+nicon=0x307+hicon=0x317</styleUrl>
+  <Point>
+    <altitudeMode>absolute</altitudeMode>
+    <coordinates>-38.594732,14.645457,10058.548828</coordinates>
+  </Point>
+</Placemark>
+</kml>

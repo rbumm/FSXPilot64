@@ -1,0 +1,37 @@
+// -----------------------------------------------------------
+// Flightplan for FSX
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2012 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// add your comment here 
+// and here
+//
+//
+set origin EDDM
+set destination LIPZ
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput on
+autorudder on
+run takeoff
+set alt 27000.0
+waypoint 27000.0  300.0 EUR  47.73499167  11.24940278
+waypoint 27000.0  300.0 OBAGA  47.59861111  11.25000000
+waypoint 27000.0  300.0 NORTO  47.26635278  11.25182222
+waypoint 27000.0  300.0 MATAR  46.97493889  11.25330556
+waypoint 27000.0  300.0 BZO  46.46363889  11.32188889
+waypoint 27000.0  300.0 ALESE  46.27499722  11.40388889
+waypoint 27000.0  300.0 VIC  45.63730556  11.67635278
+find bestrunway LIPZ
+select approachentry
+flaps 1.
+wait distin 2.
+select ilsentry
+wait distin 2.
+select bestrunway
+set ils
+stop aph
+stop apv
+end

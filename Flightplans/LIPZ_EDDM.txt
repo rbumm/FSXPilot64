@@ -1,0 +1,25 @@
+// -----------------------------------------------------------
+// Flightplan for FSX
+// for use with FSXPilot
+// 
+// FSXPilot (c) 2005-2012 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// add your comment here 
+// and here
+//
+//
+set origin LIPZ
+set destination EDDM
+set speedunits knots
+set distanceunits miles
+set apcontrol plane
+set userinput off
+autorudder on
+run takeoff
+set alt 15000.0
+waypoint 15000.0  250.0 VIC  45.63730556  11.67635278
+waypoint 25000.0  250.0 LIZUM  47.11507222  11.75603611
+waypoint 15000.0  230.0 TULSI  47.70160556  11.78875833
+waypoint 10000.0  230.0 MANAL  47.89935556  11.79995556
+fly short autolanding EDDM 08L
+end

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+  <NetworkLink>
+  <flyToView>1</flyToView>
+    <Link>
+      <href>C:\Program Files (x86)\FSXPilot\google_earth_pos.kml</href>
+      <refreshMode>onInterval</refreshMode>
+    <refreshInterval>4</refreshInterval>
+    </Link>
+  </NetworkLink>
+</Document>
+</kml>

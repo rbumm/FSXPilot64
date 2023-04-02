@@ -1,0 +1,44 @@
+// -----------------------------------------------------------
+// Flightplans for FS2004
+// for use with FSPilot
+// 
+// FSPilot (c) 2005 by Scientific Networks Munich 
+// -----------------------------------------------------------
+// small flightplan routine (Learjet) for takeoff, 
+// VOR and GPS navigated flight from Munich to LIMC 
+//
+//
+navlights on
+strobelights on
+landinglights on
+set apcontrol plane
+set speedunits knots
+set distanceunits miles
+set userinput off
+set origin EDDM
+set destination LIMC
+run takeoff
+run altprofile
+speak this switches apv to profile mode: from here altitudes are interpreted as 
+speak deltas from ground altitude. Apv is started automatically by this command, 
+speak and the AP engine will attempt to hold this delta alt over ground 
+set alt 500.
+speak set target altitude to 500 ft above ground altitude
+speak choose this low profile only in areas with moderate elevations ...
+waypoint 500. 250. MUN
+waypoint 1500. 250. TULSI
+speak approaching the alps, so we must choose a higher alt profile, otherwise 
+speak AP engine will, although correcting wildly,  not prevent crash with mountains
+waypoint 2500. 250. RTT
+waypoint 2500. 250. INN
+speak Hello Innsbruck 
+waypoint 3200. 250. OZE
+speak the next waypoint is a bit critical. Please hold my hand, Sir.
+waypoint 3700. 250. RESIA
+speak Do you need the vomit bag, Sir ? Every flight will come to an end
+waypoint 4000. 250. PEPAG
+waypoint 1500. 250. LSZA
+speak This is Lugano. Try to relax, now, Sir. 
+fly normal autolanding LIMC
+speak Welcome to Milano, Sir. I hope you enjoyed the ride. 
+end
